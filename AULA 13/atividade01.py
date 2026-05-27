@@ -43,6 +43,7 @@ print(120 * '=')
 print(df_roupas[df_roupas['Satisfacao'] == 'BAIXO'])
 
 
+
 # Menor nível de satisfação (MUITO ALTO)
 print("\nProdutos com menores níveis de satisfação:")
 print(120 * '=')
@@ -56,3 +57,7 @@ media = df_roupas['Faturamento Total (R$)'].mean()
 print(df_roupas.loc[df_roupas['Faturamento Total (R$)'] >= media])
 
 # ------------------------------------ Somente até aqui -----------------------------------------------------------
+
+# salvar em um arquivo csv
+df_roupas_baixo = df_roupas[df_roupas['Satisfacao'] == 'BAIXO']
+df_roupas_baixo.to_csv('roupas_baixo.csv', index=False)
