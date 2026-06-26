@@ -365,12 +365,12 @@ try:
     plt.subplot(2, 2, 2)
 
     plt.hist(array_roubo_veiculo, bins=393, edgecolor='black')
-    # Média e Mediana
-    plt.axvline(media_roubo_veiculo, color='green', linewidth=1)  
-    plt.axvline(mediana_roubo_veiculo, color='orange', linewidth=1)
 
-    # colocar legenda média e mediana
-    plt.legend(['Média', 'Mediana'], loc='upper right')
+    # Média e Mediana na legenda
+    plt.axvline(media_roubo_veiculo, color='green', linewidth=1, label='Média')
+    plt.axvline(mediana_roubo_veiculo, color='orange', linewidth=1, label='Mediana')
+    plt.legend()
+
 
     # FAIXAS DO HISTOGRAMA (no terminal)
     contagens, limites = np.histogram(array_roubo_veiculo, bins=393)

@@ -320,6 +320,11 @@ try:
     plt.hist(array_recup_veiculo, bins=165, edgecolor='black')  # < Q3 na primeira
 
     contagens, limites = np.histogram(array_recup_veiculo, bins=165)  # < Q3 na primeira
+
+    # Média e Mediana na legenda
+    plt.axvline(media, color='green', linewidth=1, label='Média')
+    plt.axvline(mediana, color='orange', linewidth=1, label='Mediana')
+    plt.legend()
     
     print('\nFaixas do Histograma:')
 
