@@ -1,0 +1,7 @@
+
+https://portaldatransparencia.gov.br/download-de-dados/novo-bolsa-familia
+
+ENDERECO_DADOS = r'E:\SENAC_N\#_AULAS\BIG_DATA_SCIENCE_13455\_AULAS\DADOS\BOLSA_FAMILIA2025'
+
+git rm --cached -r AULA_12/dados
+git rm --cached AULA_12/*.parquet
